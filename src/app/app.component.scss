@@ -1,0 +1,23 @@
+
+.example-container {
+  max-height: 700px;
+  overflow: auto;
+  table {
+    width: 100%;
+    tr.row{
+      cursor: pointer;
+    }
+  }
+  .loader {
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding: 10px;
+    height: 70px;
+  }
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
