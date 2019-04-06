@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
 
   openDialog(row : Post): void {
     const dialogRef = this.dialog.open(RawDataComponent, {
-      width: '250px',
+      width: '50vw',
       data: row
     });
   }
