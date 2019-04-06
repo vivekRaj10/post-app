@@ -1,23 +1,35 @@
-
-.example-container {
-  max-height: 700px;
-  overflow: auto;
-  table {
-    width: 100%;
-    tr.row{
-      cursor: pointer;
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #e1f5fe, #01579b);
+  h2{
+    color: #01579b;
+  }
+  .column-1{
+    width: 40%;
+    align-self: center;
+    .mat-form-field {
+      width: 100%;
+      font-size: 14px;
     }
   }
-  .loader {
-    display: flex;
-    justify-content: center;
-    background: white;
-    padding: 10px;
-    height: 70px;
+  .column-2 {
+    width: 75%;
+    overflow: auto;
+    max-height: 670px;
+    table {
+      width: 100%;
+      tr.row{
+        cursor: pointer;
+      }
+    }
+    .loader {
+      height: 70px;
+      padding: 10px;
+      display: flex;
+      background: white;
+      justify-content: center;
+    }
   }
-}
-
-.mat-form-field {
-  font-size: 14px;
-  width: 100%;
 }
